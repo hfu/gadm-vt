@@ -16,6 +16,16 @@
       "minZoom": 0,
       "maxZoom": 14,
       "maxzoom": 8
+    },
+    "gadm": {
+      "type": "vector",
+      "tiles": [
+        "https://hfu.github.io/gadm-vt/{z}/{x}/{y}.pbf"
+      ],
+      "minZoom": 0,
+      "maxZoom": 14,
+      "minzoom": 9,
+      "maxzoom": 9
     }
   },
   "glyphs": "https://demo.tileserver.org/fonts/{fontstack}/{range}.pbf",
@@ -32,8 +42,30 @@
       "type": "fill",
       "source": "land",
       "source-layer": "land",
+      "maxzoom": 9,
       "paint": {
         "fill-color": "rgba(173, 135, 135, 1)"
+      }
+    },
+    {
+      "id": "gadm",
+      "type": "fill",
+      "source": "gadm",
+      "source-layer": "gadm",
+      "paint": {
+        "fill-color": "rgba(38, 210, 32, 1)",
+        "fill-outline-color": "rgba(255, 255, 255, 1)"
+      }
+    },
+    {
+      "id": "gadm-anno",
+      "type": "symbol",
+      "source": "gadm",
+      "source-layer": "gadm",
+      "minzoom": 9,
+      "maxzoom": 24,
+      "layout": {
+        "text-field": "test"
       }
     }
   ],
