@@ -10,3 +10,6 @@ As in http://www.gadm.org
 
 ## About the contents
 This site is for engineering experiment of vector tile technology. I do not have any position to comment on the content of GADM.
+
+## Someday/maybe
+属性を Mapbox GL JS 等で地図上に表示するためには、labelpoint データを作成することが有効であると思いますが、それはいつかあとでやるかもしれません。どなたかやっていただけることはありがたいです。
