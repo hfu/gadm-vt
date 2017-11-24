@@ -1,0 +1,23 @@
+{
+  "name": "gadm-vt",
+  "version": "1.0.0",
+  "description": "Vector tiles for GADM",
+  "main": "convert.js",
+  "scripts": {
+    "run": "node convert.js > gadm.ndjson; ../tippecanoe/tippecanoe -f --maximum-zoom=9 --base-zoom=9 --detect-shared-borders --layer=gadm --attribution=GADM --output-to-directory=. gadm.ndjson"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hfu/gadm-vt.git"
+  },
+  "author": "hfu",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/hfu/gadm-vt/issues"
+  },
+  "homepage": "https://github.com/hfu/gadm-vt#readme",
+  "dependencies": {
+    "@mapbox/mbtiles": "^0.9.0",
+    "shapefile": "^0.6.6"
+  }
+}

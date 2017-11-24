@@ -1,0 +1,42 @@
+{
+  "version": 8,
+  "name": "Empty Style",
+  "metadata": {
+    "mapbox:autocomposite": false,
+    "mapbox:type": "template",
+    "maputnik:renderer": "mbgljs",
+    "openmaptiles:version": "3.x"
+  },
+  "sources": {
+    "land": {
+      "type": "vector",
+      "tiles": [
+        "https://hfu.github.io/natural-earth-land-301/{z}/{x}/{y}.mvt"
+      ],
+      "minZoom": 0,
+      "maxZoom": 14,
+      "maxzoom": 8
+    }
+  },
+  "glyphs": "https://demo.tileserver.org/fonts/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "rgba(70, 179, 236, 1)"
+      }
+    },
+    {
+      "id": "land",
+      "type": "fill",
+      "source": "land",
+      "source-layer": "land",
+      "paint": {
+        "fill-color": "rgba(173, 135, 135, 1)"
+      }
+    }
+  ],
+  "sprites": "https://demo.tileserver.org/fonts/{fontstack}/{range}.pbf",
+  "id": "v0dgopsla"
+}
