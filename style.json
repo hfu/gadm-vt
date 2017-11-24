@@ -13,8 +13,6 @@
       "tiles": [
         "https://hfu.github.io/natural-earth-land-301/{z}/{x}/{y}.mvt"
       ],
-      "minZoom": 0,
-      "maxZoom": 14,
       "maxzoom": 8
     },
     "gadm": {
@@ -22,8 +20,6 @@
       "tiles": [
         "https://hfu.github.io/gadm-vt/{z}/{x}/{y}.pbf"
       ],
-      "minZoom": 0,
-      "maxZoom": 14,
       "minzoom": 9,
       "maxzoom": 9
     }
